@@ -124,7 +124,7 @@
   }
 }
 
-/* Define custom utilities directly as CSS classes for Tailwind v4 compatibility */
+/* Added custom utilities for gradient and glow effects */
 @layer components {
   .gradient-primary {
     background: linear-gradient(
