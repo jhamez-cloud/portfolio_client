@@ -1,35 +1,36 @@
 "use client"
 
+import { Gamepad2, Globe2, Laptop, Settings, Smartphone } from "lucide-react"
 import { SpecialtyCard } from "./specialty-card"
 
 export function SpecialtiesSection() {
   const specialties = [
     {
-      icon: "🌐",
+      icon: <Globe2 size={64} color="gray"/>,
       title: "Web Developer",
       description: "Building responsive, scalable web applications with modern frameworks",
       href: "/web-developer",
     },
     {
-      icon: "📱",
+      icon: <Smartphone size={64} color="gray"/>,
       title: "Mobile Developer",
       description: "Creating intuitive mobile apps for iOS and Android platforms",
       href: "/mobile-developer",
     },
     {
-      icon: "💻",
+      icon: <Laptop size={64} color="gray"/>,
       title: "Desktop Developer",
       description: "Developing powerful desktop applications across all platforms",
       href: "/desktop-developer",
     },
     {
-      icon: "🎮",
+      icon:<Gamepad2 size={64} color="gray"/>,
       title: "Game Developer",
       description: "Crafting engaging games and interactive experiences",
       href: "/game-developer",
     },
     {
-      icon: "⚙️",
+      icon: <Settings size={64} color="gray"/>,
       title: "Embedded Systems",
       description: "Programming microcontrollers and IoT devices",
       href: "/embedded-systems",

@@ -1,5 +1,6 @@
 "use client"
 
+import { Gamepad2, Globe, LaptopIcon, Smartphone } from "lucide-react"
 import type React from "react"
 
 import { useEffect, useRef, useState } from "react"
@@ -51,7 +52,7 @@ function Counter({ end, label, icon }: CounterProps) {
           ref={ref}
           className="bg-background/40 backdrop-blur-sm border border-border/50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow glow"
       >
-        <div className="text-accent mb-3">{icon}</div>
+        <div className="text-white/50 mb-3 w-full flex justify-center">{icon}</div>
         <div className="text-5xl font-bold gradient-text mb-2">{count}+</div>
         <p className="text-foreground/70 font-medium">{label}</p>
       </div>
@@ -65,10 +66,10 @@ export function CounterSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center gradient-text">Fields Of Expertise</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Counter end={50} label="Web Projects" icon={<span className="text-4xl">🌐</span>} />
-            <Counter end={25} label="Mobile Apps" icon={<span className="text-4xl">📱</span>} />
-            <Counter end={15} label="Desktop Apps" icon={<span className="text-4xl">💻</span>} />
-            <Counter end={8} label="Games Built" icon={<span className="text-4xl">🎮</span>} />
+            <Counter end={50} label="Web Projects" icon={<span className="text-4xl"><Globe size={64}/></span>} />
+            <Counter end={25} label="Mobile Apps" icon={<span className="text-4xl"><Smartphone size={64}/></span>} />
+            <Counter end={15} label="Desktop Apps" icon={<span className="text-4xl"><LaptopIcon size={64}/></span>} />
+            <Counter end={8} label="Games Built" icon={<span className="text-4xl"><Gamepad2 size={64}/></span>} />
           </div>
         </div>
       </section>
