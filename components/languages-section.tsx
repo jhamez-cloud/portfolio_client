@@ -5,7 +5,7 @@ export function LanguagesSection() {
   const languages = [
     { name: "JavaScript", proficiency: 95,image:<SiJavascript color='default' size={50}/> },
     { name: "TypeScript", proficiency: 92,image:<SiTypescript color='default' size={50}/> },
-    { name: "Python", proficiency: 70,image:<SiPython color='default' size={50}/> },
+    { name: "Python", proficiency: 80,image:<SiPython color='default' size={50}/> },
     { name: "C++", proficiency: 75,image:<SiCplusplus color='default' size={50}/> },
     { name: "MongoDB", proficiency: 78,image:<SiMongodb color='default' size={50}/>},
     { name: "MySQL", proficiency: 70,image:<SiMysql color='default' size={50}/> },
