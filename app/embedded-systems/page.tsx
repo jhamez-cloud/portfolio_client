@@ -1,7 +1,6 @@
 "use client";
 
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
+import dynamic from "next/dynamic";
 import { ExternalLink } from "lucide-react";
 import {
   SiArduino,
@@ -11,6 +10,22 @@ import {
   SiPython,
   SiShell,
 } from "@icons-pack/react-simple-icons";
+
+const Navbar = dynamic(
+  () => import("@/components/navbar").then((mod) => mod.Navbar),
+  {
+    ssr: false,
+    loading: () => <div className="h-16 border-b border-border/50" />,
+  },
+);
+
+const Footer = dynamic(
+  () => import("@/components/footer").then((mod) => mod.Footer),
+  {
+    ssr: false,
+    loading: () => <div className="h-40" />,
+  },
+);
 
 export default function EmbeddedSystemsPage() {
   const projects = [
