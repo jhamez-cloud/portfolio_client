@@ -119,8 +119,14 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: "Inter", "Segoe UI", sans-serif;
   }
 }
 
@@ -153,5 +159,9 @@
 
   .glow {
     box-shadow: 0 0 30px rgb(168 85 247 / 0.3);
+  }
+
+  .soft-card {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
   }
 }
